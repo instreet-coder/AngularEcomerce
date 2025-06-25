@@ -1,0 +1,21 @@
+<section class="login">
+    <div class="singup_container">
+        <div class="login_info">
+            <div class="login_left">
+                <img src="../../img/Side Image.png" alt="">
+            </div>
+            <div class="login_right" [formGroup]="logInForm">
+                <h2 class="login_title">Log in to Exclusive</h2>
+                <p class="login_text">Enter your details below</p>
+                <div class="login_input">
+                    <input class="Password_input" type="text" placeholder="Email or Phone Number" formControlName="email">
+                    <input class="Password_input" type="text" placeholder="Password" formControlName="password">
+                </div>
+                <div class="login_buttons">
+                    <button class="login_account">Log in</button>
+                    <a class="login_link" href="#">Forget Password?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

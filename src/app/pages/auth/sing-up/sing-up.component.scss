@@ -1,0 +1,86 @@
+.singup {
+    margin-top: 60px;
+}
+
+.singup_info {
+    display: flex;
+    gap: 129px;
+}
+
+.singup_right {
+    margin-top: 186px;
+}
+
+.singup_title {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+.singup_text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+
+.singup_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.name_input {
+    border-bottom: 1px solid #7f7f7f;
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+}
+
+.crt_account {
+    padding: 16px 122px ;
+    background-color: #DB4444;
+    border: none;
+    border-radius: 4px ;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.google_account {
+    display: flex;
+    gap: 16px;
+    padding: 16px 86px ;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #7f7f7f;
+    margin-bottom: 32px;
+}
+
+.singup_footer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+    color: #7f7f7f;
+}
+
+.singups-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f7f7f;
+}
+
+.logins {
+    color: #7f7f7f;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: 1px solid #7f7f7f;
+}

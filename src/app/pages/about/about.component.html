@@ -1,0 +1,198 @@
+<section class="about">
+    <div class="about-top">
+        <ul class="breadcrumb_list">
+            <li class="bradcrumb_item">
+                <a class="breadcrumb_link" routerLink="/home">Home</a>
+            </li>
+            <span class="breadcrumb_line">/</span>
+            <li class="bradcrumb_item">
+                <a class="active_title" routerLink="/about">About</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="ourstory">
+        <div class="ourstory_left">
+            <h1 class="oursoty_title">Our Story</h1>
+            <p class="ourstory_text">
+                Launced in 2015, Exclusive is South Asia’s premier online shopping makterplace with an active
+                presense in Bangladesh. Supported by wide range of tailored marketing, data and service solutions,
+                Exclusive has 10,500 sallers and 300 brands and serves 3 millioons customers across the region.
+                <br><br>
+                Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a
+                diverse assotment in categories ranging from consumer.
+            </p>
+        </div>
+        <div class="ourstory_right">
+            <img class="ourstory_img" src="../../img/ourstory.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="statistics">
+        <div class="container">
+            <div class="statistics_item">
+                <div class="statistics_icons" *ngFor="let statistic of companyStatistics">
+                    <div class="statistics_icon">
+                        <img [src]="statistic.imgLink" class="statistics_link" alt="">
+                    </div>
+                    <h1 class="statistics_number">{{statistic.title}}</h1>
+                    <p class="statistics_text">{{statistic.subtitle}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="team_container">
+        <div class="team" #slideList (mouseover)="stopSlideInterval()" (mouseleave)="startSlideInterval()">
+            <div class="team_socials" *ngFor="let employee of sliderList">
+                <div class="socials_top">
+                    <img [src]="employee.imgLink" alt="">
+                </div>
+                <div class="socials_bottom">
+                    <h2 class="socials_title">{{employee.fullName}}</h2>
+                    <p class="socials_text">{{employee.job}}</p>
+                    <div class="socials_icons">
+                        <a class="socials_link" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_246_4760)">
+                                    <path
+                                        d="M12.905 8.84651L12.905 8.84646C12.9194 8.06035 13.2418 7.3113 13.8028 6.76049C14.3639 6.20969 15.1188 5.90116 15.905 5.90129L12.905 8.84651ZM12.905 8.84651L12.877 10.4213M12.905 8.84651L12.877 10.4213M4.75811 7.80857L4.89001 7.91846C6.76679 9.48211 8.71781 10.4182 10.7495 10.6952C10.7495 10.6952 10.7495 10.6952 10.7495 10.6952L12.3104 10.9072L4.75811 7.80857ZM4.75811 7.80857L4.72759 7.97751M4.75811 7.80857L4.72759 7.97751M4.72759 7.97751C4.42576 9.64819 4.5683 11.0709 5.1479 12.3018C5.72718 13.532 6.73827 14.5605 8.15577 15.4519L8.15579 15.452M4.72759 7.97751L8.15579 15.452M8.15579 15.452L9.90279 16.55L9.954 16.4685M8.15579 15.452L9.954 16.4685M9.954 16.4685L9.90279 16.55C9.97196 16.5934 10.0294 16.6532 10.0702 16.724C10.1109 16.7948 10.1337 16.8745 10.1365 16.9562C10.1392 17.0378 10.122 17.1189 10.0862 17.1924C10.0504 17.2658 9.99716 17.3294 9.93112 17.3775L9.93101 17.3775M9.954 16.4685L9.93101 17.3775M9.93101 17.3775L8.33901 18.5405L8.11542 18.7039M9.93101 17.3775L8.11542 18.7039M8.11542 18.7039L8.39178 18.7211M8.11542 18.7039L8.39178 18.7211M8.39178 18.7211C9.3449 18.7805 10.2529 18.7385 11.0095 18.5884L11.0096 18.5884M8.39178 18.7211L11.0096 18.5884M11.0096 18.5884C13.3886 18.1134 15.3745 16.9794 16.7652 15.2211M11.0096 18.5884L16.7652 15.2211M12.877 10.4213C12.8757 10.4918 12.8594 10.5612 12.8293 10.625C12.7993 10.6887 12.7561 10.7454 12.7026 10.7912C12.649 10.8371 12.5864 10.8712 12.5188 10.8911C12.4513 10.9111 12.3803 10.9166 12.3105 10.9072L12.877 10.4213ZM16.7652 15.2211C18.1557 13.463 18.945 11.0883 18.945 8.14229M16.7652 15.2211L18.945 8.14229M18.945 8.14229C18.945 7.99668 18.8714 7.78474 18.744 7.55722M18.945 8.14229L18.744 7.55722M18.744 7.55722C18.6142 7.32559 18.4215 7.06508 18.1673 6.82049M18.744 7.55722L18.1673 6.82049M18.1673 6.82049C17.6587 6.33088 16.8999 5.90129 15.905 5.90129L18.1673 6.82049ZM20.4978 5.53842C20.8818 5.48388 21.3285 5.34345 21.916 5.01105C21.6101 6.49526 21.4321 7.16764 20.7642 8.08336L20.745 8.10969V8.14229C20.745 11.9415 19.578 14.7567 17.8258 16.7397C16.0726 18.7238 13.7277 19.8813 11.3624 20.3532C9.74529 20.6759 7.7544 20.5728 5.99643 20.2106C5.11813 20.0296 4.30077 19.7846 3.61983 19.4974C3.03727 19.2517 2.56009 18.9775 2.22956 18.6904C2.66065 18.6482 3.4114 18.5535 4.24366 18.3598C5.24355 18.1272 6.37173 17.7494 7.20306 17.141L7.31918 17.056L7.19904 16.9768C7.15724 16.9492 7.11178 16.9196 7.06301 16.8879C6.30477 16.3938 4.74648 15.3786 3.73155 13.5166C2.66714 11.5637 2.19257 8.66295 3.91362 4.42592C5.57889 6.34347 7.2726 7.66001 8.99504 8.3668L8.99505 8.36681C9.57662 8.60536 9.94255 8.72373 10.2318 8.79141C10.4509 8.84265 10.6261 8.86463 10.8117 8.88794C10.8703 8.89529 10.93 8.90278 10.9924 8.91135L11.2872 8.95189L11.1059 8.77077C11.131 7.8414 11.4254 6.93895 11.9539 6.17331C12.4904 5.39606 13.2442 4.79434 14.1211 4.4435C14.9979 4.09265 15.9588 4.00828 16.8833 4.20093C17.8079 4.39359 18.6551 4.85471 19.3189 5.52657L19.3485 5.55658L19.3907 5.55628C19.4934 5.55556 19.5972 5.55908 19.7036 5.56269C19.9483 5.57098 20.2068 5.57974 20.4978 5.53842Z"
+                                        fill="black" stroke="white" stroke-width="0.2" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_246_4760">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a class="socials_link" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17 3H7C5.93913 3 4.92172 3.42143 4.17157 4.17157C3.42143 4.92172 3 5.93913 3 7V17C3 18.0609 3.42143 19.0783 4.17157 19.8284C4.92172 20.5786 5.93913 21 7 21H17C18.0609 21 19.0783 20.5786 19.8284 19.8284C20.5786 19.0783 21 18.0609 21 17V7C21 5.93913 20.5786 4.92172 19.8284 4.17157C19.0783 3.42143 18.0609 3 17 3Z"
+                                    stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                <path
+                                    d="M12 16C13.0609 16 14.0783 15.5786 14.8284 14.8284C15.5786 14.0783 16 13.0609 16 12C16 10.9391 15.5786 9.92172 14.8284 9.17157C14.0783 8.42143 13.0609 8 12 8C10.9391 8 9.92172 8.42143 9.17157 9.17157C8.42143 9.92172 8 10.9391 8 12C8 13.0609 8.42143 14.0783 9.17157 14.8284C9.92172 15.5786 10.9391 16 12 16V16Z"
+                                    stroke="black" stroke-width="1.5" stroke-linejoin="round" />
+                                <path
+                                    d="M17.5 7.5C17.7652 7.5 18.0196 7.39464 18.2071 7.20711C18.3946 7.01957 18.5 6.76522 18.5 6.5C18.5 6.23478 18.3946 5.98043 18.2071 5.79289C18.0196 5.60536 17.7652 5.5 17.5 5.5C17.2348 5.5 16.9804 5.60536 16.7929 5.79289C16.6054 5.98043 16.5 6.23478 16.5 6.5C16.5 6.76522 16.6054 7.01957 16.7929 7.20711C16.9804 7.39464 17.2348 7.5 17.5 7.5Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                        <a class="socials_link" href="#">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.5 9.05C12.417 8.113 13.611 7.5 15 7.5C16.4587 7.5 17.8576 8.07946 18.8891 9.11091C19.9205 10.1424 20.5 11.5413 20.5 13V20.5H18.5V13C18.5 12.0717 18.1313 11.1815 17.4749 10.5251C16.8185 9.86875 15.9283 9.5 15 9.5C14.0717 9.5 13.1815 9.86875 12.5251 10.5251C11.8687 11.1815 11.5 12.0717 11.5 13V20.5H9.5V8H11.5V9.05ZM4.5 6C4.10218 6 3.72064 5.84196 3.43934 5.56066C3.15804 5.27936 3 4.89782 3 4.5C3 4.10218 3.15804 3.72064 3.43934 3.43934C3.72064 3.15804 4.10218 3 4.5 3C4.89782 3 5.27936 3.15804 5.56066 3.43934C5.84196 3.72064 6 4.10218 6 4.5C6 4.89782 5.84196 5.27936 5.56066 5.56066C5.27936 5.84196 4.89782 6 4.5 6ZM3.5 8H5.5V20.5H3.5V8Z"
+                                    fill="black" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="indicators">
+            <div 
+              class="indicator" 
+              *ngFor="let item of sliderList; let i = index" 
+              [class.active]="i === slideIndex"
+              (click)="paginationSlide(i)">
+            </div>
+          </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <div class="services_icons">
+            <div class="services_delivery">
+                <div class="services_delivery-icon">
+                    <a class="services_delivery-link" href="#">
+                        <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5560_335)">
+                                <path
+                                    d="M12.1667 31.6667C14.0076 31.6667 15.5 30.1743 15.5 28.3333C15.5 26.4924 14.0076 25 12.1667 25C10.3257 25 8.83334 26.4924 8.83334 28.3333C8.83334 30.1743 10.3257 31.6667 12.1667 31.6667Z"
+                                    stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M28.8333 31.6667C30.6743 31.6667 32.1667 30.1743 32.1667 28.3333C32.1667 26.4924 30.6743 25 28.8333 25C26.9924 25 25.5 26.4924 25.5 28.3333C25.5 30.1743 26.9924 31.6667 28.8333 31.6667Z"
+                                    stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M8.83331 28.3335H7.49998C6.39541 28.3335 5.49998 27.4381 5.49998 26.3335V21.6668M3.83331 8.3335H20.1666C21.2712 8.3335 22.1666 9.22893 22.1666 10.3335V28.3335M15.5 28.3335H25.5M32.1667 28.3335H33.5C34.6046 28.3335 35.5 27.4381 35.5 26.3335V18.3335M35.5 18.3335H22.1666M35.5 18.3335L31.0826 10.9712C30.7211 10.3688 30.0701 10.0002 29.3676 10.0002H22.1666"
+                                    stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M8.5 28H7.16667C6.0621 28 5.16667 27.1046 5.16667 26V21.3333M3.5 8H19.8333C20.9379 8 21.8333 8.89543 21.8333 10V28M15.5 28H25.1667M32.5 28H33.1667C34.2712 28 35.1667 27.1046 35.1667 26V18M35.1667 18H21.8333M35.1667 18L30.7493 10.6377C30.3878 10.0353 29.7368 9.66667 29.0343 9.66667H21.8333"
+                                    stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.5 11.8184H12.1667" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M2.31818 15.4546H8.98484" stroke="#FAFAFA" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M5.5 19.0908H12.1667" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5560_335">
+                                    <rect width="40" height="40" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <h2 class="service_delivery-title">FREE AND FAST DELIVERY</h2>
+                <p class="services_delivery-text">Free delivery for all orders over $140</p>
+            </div>
+            <div class="services_delivery">
+                <div class="services_delivery-icon">
+                    <a class="services_delivery-link" href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_5560_352)">
+                                <path
+                                    d="M13.3334 24.9998C13.3334 23.1589 11.841 21.6665 10 21.6665C8.15907 21.6665 6.66669 23.1589 6.66669 24.9998V28.3332C6.66669 30.1741 8.15907 31.6665 10 31.6665C11.841 31.6665 13.3334 30.1741 13.3334 28.3332V24.9998Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M33.3334 24.9998C33.3334 23.1589 31.841 21.6665 30 21.6665C28.1591 21.6665 26.6667 23.1589 26.6667 24.9998V28.3332C26.6667 30.1741 28.1591 31.6665 30 31.6665C31.841 31.6665 33.3334 30.1741 33.3334 28.3332V24.9998Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M6.66669 24.9998V19.9998C6.66669 16.4636 8.07145 13.0722 10.5719 10.5717C13.0724 8.07126 16.4638 6.6665 20 6.6665C23.5362 6.6665 26.9276 8.07126 29.4281 10.5717C31.9286 13.0722 33.3334 16.4636 33.3334 19.9998V24.9998"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M30 31.6665C30 32.9926 28.9464 34.2644 27.0711 35.202C25.1957 36.1397 22.6522 36.6665 20 36.6665"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_5560_352">
+                                    <rect width="40" height="40" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <h2 class="service_delivery-title">24/7 CUSTOMER SERVICE</h2>
+                <p class="services_delivery-text">Friendly 24/7 customer support</p>
+            </div>
+            <div class="services_delivery">
+                <div class="services_delivery-icon">
+                    <a class="services_delivery-link" href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.09906 30.5992L8.09883 30.5991C7.2261 29.9483 6.42549 28.9206 5.8427 27.759C5.25985 26.5973 4.91663 25.3451 4.91663 24.2666V11.8666C4.91663 9.50736 6.67146 6.96177 8.89112 6.13513L8.89208 6.13477L17.2083 3.01826C17.2084 3.01823 17.2085 3.0182 17.2086 3.01817C17.9621 2.73661 18.9615 2.5874 19.9833 2.5874C21.0051 2.5874 22.0045 2.73661 22.758 3.01817C22.7581 3.0182 22.7582 3.01823 22.7582 3.01826L31.0745 6.13477L31.0755 6.13513C33.2951 6.96177 35.05 9.50736 35.05 11.8666V24.2499C35.05 25.3371 34.7066 26.5892 34.124 27.7483C33.5415 28.9073 32.741 29.9313 31.8678 30.5824L31.8675 30.5826L24.7009 35.9326L24.7008 35.9325L24.6946 35.9373C23.4119 36.9264 21.724 37.4332 20 37.4332C18.2773 37.4332 16.5851 36.927 15.2648 35.9486C15.2647 35.9484 15.2645 35.9483 15.2644 35.9482L8.09906 30.5992ZM17.7418 4.43145L17.7412 4.4317L9.4245 7.54837L9.42379 7.54863C8.59621 7.86019 7.85498 8.52248 7.32406 9.29061C6.79297 10.059 6.43329 10.9898 6.43329 11.8832V24.2666C6.43329 25.161 6.74388 26.1892 7.20088 27.101C7.65776 28.0126 8.29325 28.8722 9.00081 29.4005L9.00085 29.4006L16.1672 34.7503C17.2292 35.5445 18.6282 35.9249 20.002 35.9249C21.376 35.9249 22.7782 35.5445 23.8477 34.7516L23.8491 34.7506L31.0157 29.4006L31.0166 29.3999C31.7314 28.8638 32.3668 28.005 32.8222 27.0943C33.2775 26.1837 33.5833 25.16 33.5833 24.2666V11.8666C33.5833 10.9804 33.2229 10.0538 32.6925 9.28645C32.162 8.51889 31.4223 7.85396 30.5976 7.5338L30.5976 7.53376L30.5921 7.5317L22.2754 4.41503L22.2755 4.41495L22.2664 4.41174C21.6282 4.18651 20.8001 4.08314 20.0007 4.08532C19.202 4.0875 18.3751 4.19514 17.7418 4.43145Z"
+                                fill="#FAFAFA" stroke="#FAFAFA" />
+                            <path
+                                d="M17.4131 21.0536L17.7667 21.4071L18.1202 21.0536L24.4036 14.7703C24.6916 14.4822 25.1751 14.4822 25.4631 14.7703C25.7512 15.0583 25.7512 15.5417 25.4631 15.8298L18.2965 22.9965C18.1452 23.1478 17.9579 23.2167 17.7667 23.2167C17.5755 23.2167 17.3882 23.1478 17.2369 22.9965L14.5536 20.3131C14.2655 20.0251 14.2655 19.5417 14.5536 19.2536C14.8416 18.9655 15.3251 18.9655 15.6131 19.2536L17.4131 21.0536Z"
+                                fill="#FAFAFA" stroke="#FAFAFA" />
+                        </svg>
+                    </a>
+                </div>
+                <h2 class="service_delivery-title">MONEY BACK GUARANTEE</h2>
+                <p class="services_delivery-text">We reurn money within 30 days</p>
+            </div>
+        </div>
+    </div>
+    <button class="up_button" id="up_button" [class.visibility]="upBtnVisibility" (click)="toTopScroll()">
+        <a>
+            <img src="../../img/up.svg" alt="">
+        </a>
+    </button>
+</section>

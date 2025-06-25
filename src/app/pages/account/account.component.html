@@ -1,0 +1,89 @@
+<section class="account">
+    <div class="container">
+        <div class="breadcrumb_account">
+            <ul class="breadcrumb_list">
+                <li class="bradcrumb_item">
+                    <a class="breadcrumb_link" href="#">Home</a>
+                </li>
+                <span class="breadcrumb_line">/</span>
+                <li class="bradcrumb_item">
+                    <a class="active_title" href="#">My Account</a>
+                </li>
+            </ul>
+            <ul class="welcome_list">
+                <li class="welcome_item">
+                    <a class="welcome_link" href="#" style="color: black;">Welcome!</a>
+                </li>
+                <li class="welcome_item">
+                    <a class="welcome_link" href="#"><span style="color: #DB4444;" *ngIf="user | async as currentUser">{{currentUser.firstName + currentUser.lastName}}</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account_all">
+            <div class="accounts_menu">
+                <h2 class="account_title">Manage My Account</h2>
+                <ul class="account_list">
+                    <li class="account_item">
+                        <a class="account_link" routerLink="/account">My Profile</a>
+                    </li>
+                    <li class="account_item">
+                        <a class="account_link" routerLink="/order/checkout">Address Book</a>
+                    </li>
+                    <li class="account_item">
+                        <a class="account_link" routerLink="/order/checkout">My Payment Options</a>
+                    </li>
+                </ul>
+                <div class="account_menu">
+                    <h2 class="account_title">My Orders</h2>
+                    <ul class="account_list">
+                        <li class="account_item">
+                            <a class="account_link" href="#">My Returns</a>
+                        </li>
+                        <li class="account_item">
+                            <a class="account_link" href="#">My Cancellations</a>
+                        </li>
+                    </ul>
+                    <a class="account_last-title" routerLink="/wishlist">My WishList</a>
+                </div>
+            </div>
+
+
+            <div class="account_right">
+                <form action="" [formGroup]="userEdirForm">
+                    <h2 class="right_title">Edit Your Profile</h2>
+                    <div class="account_name-input">
+                        <form class="account_form" action="">
+                            <label class="form_label">First Name</label>
+                            <input class="account_input" type="text" placeholder="Md" formControlName="firstName">
+                        </form>
+                        <form class="account_form" action="">
+                            <label class="form_label">Last Name</label>
+                            <input class="account_input" type="text" placeholder="Rimel" formControlName="lastName">
+                        </form>
+                    </div>
+                    <div class="account_name-input">
+                        <form class="account_form" action="">
+                            <label class="form_label">Email</label>
+                            <input class="account_input" type="email" placeholder="rimel1111@gmail.com" formControlName="email">
+                        </form>
+                        <form class="account_form" action="">
+                            <label class="form_label">Address</label>
+                            <input class="account_input" type="text" placeholder="Kingston, 5236, United State" formControlName="address">
+                        </form>
+                    </div>
+                    <form class="account_password" action="">
+                        <label class="password_label" for="">Password Changes</label>
+                        <input class="password_input" type="password" placeholder="Current Passwod" formControlName="currentPassword">
+                        <input class="password_input" type="password" placeholder="New Passwod" formControlName="newPassword">
+                        <input class="password_input" type="password" placeholder="Confirm New Passwod" formControlName="confirmPassword">
+                    </form>
+                    <div class="right_buttons">
+                        <button class="canel_btn" (click)="onCancel()">Cancel</button>
+                        <button class="save_btn" (click)="onSubmit()">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

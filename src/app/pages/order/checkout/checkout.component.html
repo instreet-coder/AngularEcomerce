@@ -1,0 +1,114 @@
+<section class="CheckOut">
+    <div class="container">
+        <div class="breadcrumb">
+            <ul class="breadcrumb_list">
+                <li class="breadcrumb_item">
+                    <a class="breadcrumb_link" href="#">Account</a>
+                    <span class="breadcrumb_line">/</span>
+                </li>
+                <li class="breadcrumb_item">
+                    <a class="breadcrumb_link" href="#">My Account</a>
+                    <span class="breadcrumb_line">/</span>
+                </li>
+                <li class="breadcrumb_item">
+                    <a class="breadcrumb_link" routerLink="/order/cart">Product</a>
+                    <span class="breadcrumb_line">/</span>
+                </li>
+                <li class="breadcrumb_item">
+                    <a class="breadcrumb_link" routerLink="/order/cart">View Cart</a>
+                    <span class="breadcrumb_line">/</span>
+                </li>
+                <li class="breadcrumb_item">
+                    <a class="active_title" routerLink="/order/checkout">CheckOut</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="CheckOut_bottom">
+            <div class="biling">
+                <h2 class="biling_title">Billing Details</h2>
+                <form class="biling_form" [formGroup]="userDataForm">
+                    <label class="biling_label">First Name <span style="color: #DB4444;">*</span></label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="firstName" required="true">
+
+                    <label class="biling_label">Company Name</label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="companyName">
+
+                    <label class="biling_label">Street Address <span style="color: #DB4444;">*</span></label>
+
+                    <input class="biling_input" type="text" name="" id="" formControlName="adress">
+
+                    <label class="biling_label">Apartment, floor, etc. (optional)</label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="apartment">
+
+                    <label class="biling_label">Town/City <span style="color: #DB4444;">*</span></label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="city">
+
+                    <label class="biling_label">Phone Number <span style="color: #DB4444;">*</span></label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="phoneNumber">
+
+                    <label class="biling_label">Email Address <span style="color: #DB4444;">*</span></label>
+
+                    <input class="biling_input" type="text" name="" id=""  formControlName="email">
+
+                    <div class="biling_checkbox">
+                        <input class="checkbox" type="checkbox" [checked]="isSaveInfo" (click)="setSaveInfo()">
+                        <p class="checkbox_text">Save this information for faster check-out next time</p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="summary">
+                <div class="summary_info">
+                    <div class="summary_product-info" *ngFor="let orderProduct of orderProducts">
+                        <img class="cart_page-img" [src]="orderProduct.product.imgLink" alt="">
+                        <p class="cart_page-text">{{orderProduct.product.name}}</p>
+                        <div class="summary_price">${{orderProduct.product.currentPrice * orderProduct.quantity}}</div>
+                    </div>
+                    <div class="summary_subtotal">
+                        <p class="summarys_subtotal">Subtotal:</p>
+                        <span class="summary_subtotal_price">${{getTotal()}}</span>
+                    </div>
+                    <hr class="summary_hr">
+                    <div class="summary_subtotal">
+                        <p class="summarys_subtotal">Shipping:</p>
+                        <span class="summary_subtotal_price">Free</span>
+                    </div>
+                    <hr class="summary_hr">
+                    <div class="summary_subtotal">
+                        <p class="summarys_subtotal">Total:</p>
+                        <span class="summary_subtotal_price">${{getTotal()}}</span>
+                    </div>
+                    <div class="bank" [formGroup]="userDataForm">
+                        <div class="any_bank">
+                            <div class="bank_icon">
+                                <input type="radio" id="bank" checked class="product_coloc c1" formControlName="paymentType" value="bank-card">
+                                <label for="bank">Bank</label>
+                            </div>
+                            <div class="paycard">
+                                <img src="../../img/Bkash.png" alt="">
+                                <img src="../../img/Visa.png" alt="">
+                                <img src="../../img/Mastercard.png" alt="">
+                                <img src="../../img/card-kitay.png" alt="">
+                            </div>
+                        </div>
+                        <div class="bank_icon">
+                            <input type="radio" id="cash" checked class="product_coloc c1" formControlName="paymentType" value="cash">
+                            <label for="cash">Cash on delivery</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="CheckOut_buttons" [formGroup]="userDataForm">
+                    <input class="CheckOut_Couponcode" placeholder="Coupon Code" type="text" formControlName="cupon">
+                    <button class="CheckOut_Applicoupon" (click)="activeCupon()">Apply Coupon</button>
+                </div>
+                <button (click)="onSubmit()" class="CheckOut_Placeorder">Place Order</button>
+            </div>
+        </div>
+    </div>
+</section>

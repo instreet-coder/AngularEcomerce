@@ -1,0 +1,80 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_content {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 650px;
+}
+
+.modal_text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.modal_bg {
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00000041; 
+    z-index: -1;
+}
+
+.modal_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.shop_prices {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.shop_bottom-pricenew {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DB4444;
+}
+
+.shop_bottom-priceold {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: line-through;
+    color: #7f7f7f;
+}
+
+.shop_bottom-span {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 400;
+    line-height: 21px;
+    color: #7f7f7f;
+}
+

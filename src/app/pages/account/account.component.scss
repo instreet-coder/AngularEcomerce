@@ -1,0 +1,181 @@
+.account {
+    margin-top: 80px;
+}
+
+.account_all {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.breadcrumb_account {   
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.breadcrumb_list {
+    display: flex;
+    gap: 8px;
+}
+
+.breadcrumb_link {
+    color: #7f7f7f;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.welcome_list {
+    margin-left: auto;
+    display: flex;
+    gap: 5px;
+}
+
+.welcome_link {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.accounts_menu {
+    width: 25%;
+    margin-bottom: 24px;
+}
+
+.account_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.account_list {
+    padding-left: 35px;
+}
+
+.account_item {
+    margin-bottom: 8px;
+}
+
+.account_link:hover {
+    color: #DB4444;
+}
+
+.account_link {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f7f7f;
+}
+
+.account_last-title {
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.account_right {
+    width: 65%;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+.right_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #DB3333;
+    margin-bottom: 16px;
+}
+
+.account_name-input {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 24px;
+}
+
+.account_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label {
+    margin-bottom: 8px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.account_input {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    width: 316px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    border: none;
+}
+
+.account_password {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.password_label {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.password_input {
+    display: flex;
+    align-items: center;
+    padding: 13px 16px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.right_buttons {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.canel_btn {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+}
+
+.save_btn {
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #DB3333;
+    display: flex;
+    padding: 16px 48px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}

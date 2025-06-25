@@ -1,0 +1,10 @@
+<div class="categories_bottom" >
+    <a class="categories_item" [href]="Category.link" *ngFor="let Category of categories">
+        <div class="categories_icon">
+            <img class="categories_icon" [src]="Category.imgLink" alt="">
+        </div>
+
+
+        <div class="categories_name">{{Category.name}}</div>
+    </a>
+</div>

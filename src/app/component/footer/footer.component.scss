@@ -1,0 +1,187 @@
+.footer {
+    margin-top: 140px;
+    background-color: #000;
+    position: relative;
+}
+
+.footer_form {
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: flex;
+    gap: 87px;
+    color: #ffffff;
+}
+
+.footer_help {
+    color: #ffffff;
+}
+
+.logo_text {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.form_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.form_text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.form_email {
+    display: flex;
+    border-radius: 4px;
+    border: 1.5px solid #ffffff;
+    gap: 32px;
+    position: relative;
+}
+
+.form_input {
+    display: inline-block;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 12px 16px ;
+    background-color: #000;
+    color: #ffffff;
+}
+
+.form_button {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 12px 12px ;
+    right: 0;   
+}
+
+.support {
+    width: 175px;
+}
+
+.support_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.support_li {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+
+.support_link {
+    color: #ffffff;
+}
+
+.Account_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.Account_li {
+    margin-bottom: 16px;
+}
+
+.Account_link {
+    color: #ffffff;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.QuickLink_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+    color: #ffffff;
+}
+
+.QuickLink_li {
+    margin-bottom: 16px;
+}
+
+.QuickLink_link {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.DownloadApp_title {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.DownloadApp_text {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 8px;
+    color: #FAFAFA;
+}
+
+.app_description {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.google {
+    margin-bottom: 10px;
+}
+
+.app_icons {
+    display: flex;
+    gap: 24px;
+}
+
+.footer_bottom {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #7f7f7f;
+    padding-top: 16px;
+}
+
+.footer_bottom-text {
+    color: #7f7f7f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

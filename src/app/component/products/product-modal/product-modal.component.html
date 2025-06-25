@@ -1,0 +1,19 @@
+<section class="modal" *ngIf="productModal$ | async as product">
+    <div class="modal_content">
+        <div class="modal_img">
+            <img [src]="product.imgLink" alt="">
+        </div>
+        <div class="modal_text">
+            <h2 class="modal_title">{{product.name}}</h2>
+            <div class="shop_prices">
+                <div class="shop_bottom-pricenew">${{product.currentPrice}}</div>
+                <div class="shop_bottom-priceold" *ngIf="product.originalPrice">${{product.originalPrice}}</div>
+            </div>
+            <div class="shop_bottom-estimation">
+                <img [src]="rating" alt="" *ngFor="let rating of product.ratings">
+                <span class="shop_bottom-span">({{product.ratingNumber}})</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal_bg" (click)="closeModal()"></div>
+</section>

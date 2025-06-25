@@ -1,0 +1,93 @@
+<!-- мухаммадсодик махаммаджонов -->
+<section class="cart">
+    <div class="container">
+        <div class="cart_page">
+            <div class="title">
+                <a class="cart_title" href="">Home</a>
+                <div>/</div>
+                <a class="active_title" routerLink="/order/cart">Cart</a>
+            </div>
+            <div class="cart_page-top">
+                <div class="cart_item">
+                    <p class="products">Product</p>
+                    <p class="cart_price">Price</p>
+                    <p class="cart_quantity">Quantity</p>
+                    <p class="cart_subtotal">Subtotal</p>
+                </div>
+                <div class="cartpage_list">
+                    <div class="cart_page-item" *ngFor="let cartProduct of cartProducts">
+                        <div class="cart_page-first">
+                            <img class="cart_page-img" [src]="cartProduct.product.imgLink" alt="">
+                            <p class="cart_img-text">{{cartProduct.product.name}}</p>
+                            <button class="cartpage_delete" (click)="removeCartProducts(cartProduct.product.id)">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="9" fill="#DB4444" />
+                                    <path d="M9 15L12 12M15 9L11.9994 12M11.9994 12L9 9M12 12L15 15" stroke="white"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="cart_page-price">${{cartProduct.product.currentPrice}}</div>
+                        <div class="cartpage_quantity">
+                            <input type="number" class="cartpage_input" [value]="cartProduct.quantity" (input)="onInputQuantity($event, cartProduct.product.id)">
+                            <div class="quantity">
+                                <button (click)="quantityIncrement(cartProduct.product.id)">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.75732 7.36666L4.45732 10.6667L3.51465 9.72399L7.75732 5.48132L12 9.72399L11.0573 10.6667L7.75732 7.36666Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                                <button (click)="quantityDiscrement(cartProduct.product.id)">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.24268 8.63334L11.5427 5.33334L12.4854 6.27601L8.24268 10.5187L4.00002 6.27601L4.94268 5.33334L8.24268 8.63334Z"
+                                            fill="black" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cart_page-total">${{cartProduct.product.currentPrice * cartProduct.quantity}}</div>
+                    </div>
+                </div>
+                <div class="cart_page-buttons">
+                    <a routerLink="/home" class="cart_page-btn">Return To Shop</a>
+                    <a class="cart_page-update">Update Cart</a>
+                </div>
+            </div>
+
+            
+
+            <div class="cart_page-bottom">
+                <div class="cart_page-bottom-button">
+                    <input class="cart_page-bottom-input" placeholder="Coupon Code">
+                    <button class="cart_page-Coupon">Apply Coupon</button>
+                </div>
+                <div class="cart_total">
+                    <div class="cart_total-title">Cart Total</div>
+                    <div class="cart_page-subtotal">
+                        <p class="subtotal">Subtotal:</p>
+                        <span class="subtotal_price">${{getTotal()}}</span>
+                    </div>
+                    <hr class="cart_hr">
+                    <div class="cart_page-subtotal">
+                        <p class="subtotal">Shipping:</p>
+                        <span class="subtotal_price">Free</span>
+                    </div>
+                    <hr class="cart_hr">
+                    <div class="cart_page-subtotal">
+                        <p class="subtotal">Total:</p>
+                        <span class="subtotal_price">${{getTotal()}}</span>
+                    </div>
+                    <div class="cart_total-btn">
+                        <button (click)="onSubmit()" class="checkout_btn" routerLink="/order/checkout">Procees to checkout</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+.categories_bottom {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.categories_item {
+    color: #000;
+    padding-top: 25px;
+    padding-bottom: 24px;
+    border: 1px solid #7f7f7f;
+    width: 170px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.categories_item:hover {
+    background-color: #DB4444;
+    // color: #ffffff;
+}
+
+// .categories_item:hover .svg-path  {
+//     stroke: #ffffff;
+// }
+
+.categories_icon {
+    margin-bottom: 16px;
+    width: 56px;
+    height: 56px;
+}
+
+.categories_name {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}

@@ -1,0 +1,51 @@
+<div class="NewArrival-bottom">
+    <div class="NewArrival-PlayStation">
+        <!-- Статичный блок PlayStation -->
+        <div class="NewArrival-PlayStation-info">
+            <h2 class="NewArrival-PlayStation-title">{{ arrivalList[0].name }}</h2>
+            <p class="NewArrival-PlayStation-text">{{ arrivalList[0].about }}</p>
+            <a class="NewArrival-PlayStation-link" href="#">Shop Now</a>
+        </div>
+        <div class="NewArrival-PlayStation-img">
+            <img [src]="arrivalList[0].imgLink" alt="">
+        </div>
+    </div>
+
+    <!-- Правая колонка -->
+    <div>
+        <div class="NewArrival-Collections">
+            <div class="NewArrival-Collections-info">
+                <h2 class="NewArrival-Collections-title">{{ arrivalList[1].name }}</h2>
+                <p class="NewArrival-Collections-text">{{ arrivalList[1].about }}</p>
+                <a class="NewArrival-Collections-link" href="#">Shop Now</a>
+            </div>
+            <div class="NewArrival-Collections-img">
+                <img [src]="arrivalList[1].imgLink" alt="">
+            </div>
+        </div>
+
+        <div class="NewArrival-bottom-below">
+            <div class="NewArrival-speakers">
+                <div class="NewArrival-speakers-info">
+                    <h2 class="NewArrival-speakers-title">{{ arrivalList[2].name }}</h2>
+                    <p class="NewArrival-speakers-text">{{ arrivalList[2].about }}</p>
+                    <a class="NewArrival-speakers-link" href="#">Shop Now</a>
+                </div>
+                <div class="NewArrival-speakers-img">
+                    <img [src]="arrivalList[2].imgLink" alt="">
+                </div>
+            </div>
+
+            <div class="NewArrival-Perfume">
+                <div class="NewArrival-Perfume-info">
+                    <h2 class="NewArrival-Perfume-title">{{ arrivalList[3].name }}</h2>
+                    <p class="NewArrival-Perfume-text">{{ arrivalList[3].about }}</p>
+                    <a class="NewArrival-Perfume-link" href="#">Shop Now</a>
+                </div>
+                <div class="NewArrival-Perfume-img">
+                    <img [src]="arrivalList[3].imgLink" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,218 @@
+.NewArrival {
+    margin-bottom: 140px;
+}
+
+.NewArrival-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.NewArrival-title {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DB4444;
+}
+
+.NewArrival-text {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 60px;
+}
+
+.NewArrival-bottom {
+    display: flex;
+    gap: 30px;
+}
+
+.NewArrival-PlayStation {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 570px;
+    height: 600px;
+    border-radius: 4px;
+}
+
+.NewArrival-PlayStation-img {
+    padding: 89px 30px;
+    padding-bottom: 0px;
+}
+
+.NewArrival-PlayStation-info {
+    color: #F5F5F5; 
+    position: absolute;
+    margin-left: 30px;
+    bottom: 32px;
+    width: 242px;
+}
+
+.NewArrival-PlayStation-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.NewArrival-PlayStation-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.NewArrival-PlayStation-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.NewArrival-Collections {
+    margin-bottom: 32px;    
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 4px;
+}
+
+.NewArrival-Collections-info {
+    margin-left: 24px;
+    color: #F5F5F5;
+    position: absolute;
+    width: 255px;
+    height: 122px;
+}
+
+.NewArrival-Collections-img {
+    margin-left: auto;
+}
+
+.NewArrival-Collections-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.NewArrival-Collections-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 16px;
+}
+
+.NewArrival-Collections-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size:  16px;
+    line-height: 24px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.NewArrival-bottom-below {
+    display: flex;
+    gap: 30px;
+}
+
+.NewArrival-speakers {
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    background-color: #000;
+    position: relative;
+}
+
+.NewArrival-speakers-info {
+    position: absolute;
+    color: #F5F5F5;
+    bottom: 24px;
+    margin-left: 24px;
+}
+
+.NewArrival-speakers-img {
+    padding: 31px 30px;
+}
+
+.NewArrival-speakers-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.NewArrival-speakers-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.NewArrival-speakers-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.NewArrival-Perfume {
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #000;
+    position: relative;
+}
+
+.NewArrival-Perfume-info {
+    position: absolute;
+    color: #F5F5F5;
+    bottom: 24px;
+    margin-left: 24px;
+}
+
+.NewArrival-Perfume-img {
+    padding: 30px 30px 32px 30px;
+}
+
+.NewArrival-Perfume-title {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.NewArrival-Perfume-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+}
+
+.NewArrival-Perfume-link {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size:  16px;
+    line-height: 24px;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
