@@ -32,9 +32,6 @@ export const routes: Routes = [
             {
                 path:"contact", loadComponent: () => import("./pages/contact/contact.component")
             },
-            {
-                path:"product/:id", loadComponent: () => import("./pages/product/product.component")
-            },
         ]
     }
 ];
